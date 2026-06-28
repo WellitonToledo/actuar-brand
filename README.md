@@ -26,7 +26,10 @@ O neutro não é preto puro (`#000000` é duro e barato em marca): é um **quase
 actuar-brand-kit/
 ├── logo/        Lockup completo (símbolo + wordmark)
 ├── wordmark/    Só o nome, sem símbolo
-└── print/       PDF multipágina pronto para a gráfica
+├── symbol/      Só o símbolo (marca/ícone) + favicons .ico
+├── print/       PDF multipágina pronto para a gráfica
+├── wallpapers/  Papéis de parede — desktop e mobile (em breve)
+└── social/      Templates para redes sociais (em breve)
 ```
 
 ### logo/ — lockup completo
@@ -46,6 +49,19 @@ actuar-brand-kit/
 | `actuar-wordmark-branca` | `#FFFFFF` | Reverso, sobre fundo escuro/azul. |
 | `actuar-wordmark-vibrante` | `#1B2FEB` | Opcional, peças de marketing. Contraste 7.92:1. |
 
+### symbol/ — só o símbolo
+
+A marca isolada (sem o nome) — para favicon, app icon, avatar e usos em espaço reduzido.
+
+| Arquivo | Uso |
+|---|---|
+| `actuar-simbolo-cor` | Colorido (laranja/azul/ciano). Funciona em fundo claro **ou** escuro. Padrão. |
+| `actuar-simbolo-escuro` | Monocromático `#0A1130`, sobre fundo claro. |
+| `actuar-simbolo-branco` | Monocromático branco, sobre fundo escuro. |
+
+Favicons `.ico` (multi-resolução 16→256px) para cada versão, mais um `favicon.ico`
+genérico (= colorido). Uso: `<link rel="icon" href="favicon.ico">`.
+
 > **Nunca** o wordmark em laranja ou ciano. Laranja diria "ação/impulso"; ciano diria "movimento/recorrência" (e some no branco, 1.41:1). O símbolo é a energia; o wordmark é a base.
 
 ---
@@ -55,6 +71,7 @@ actuar-brand-kit/
 - **SVG** — vetorial, para web e telas. Fundo transparente.
 - **PNG** — raster com transparência, para uso rápido (slides, docs).
 - **PDF** — vetorial em curvas, para gráfica/impressão.
+- **ICO** — favicon multi-resolução (símbolo), 16→256px.
 
 ## Impressão
 
@@ -76,20 +93,20 @@ actuar-brand-kit/
 
 ```css
 :root {
-  /* Marca */
-  --brand-orange: #FB5423;   /* energia & ação — o humano */
-  --brand-blue:   #1B2FEB;   /* confiança & estrutura — o core */
-  --brand-cyan:   #1FEFFF;   /* movimento & recorrência — o fluxo */
-  --brand-white:  #FFFFFF;
+    /* Marca */
+    --brand-orange: #FB5423;   /* energia & ação — o humano */
+    --brand-blue:   #1B2FEB;   /* confiança & estrutura — o core */
+    --brand-cyan:   #1FEFFF;   /* movimento & recorrência — o fluxo */
+    --brand-white:  #FFFFFF;
 
-  /* Wordmark */
-  --brand-wordmark:         #0A1130;   /* primário — quase-preto azulado */
-  --brand-wordmark-reverse: #FFFFFF;   /* reverso sobre escuro/azul */
-  --brand-wordmark-vibrant: #1B2FEB;   /* opcional — versão colorida (marketing) */
+    /* Wordmark */
+    --brand-wordmark:         #0A1130;   /* primário — quase-preto azulado */
+    --brand-wordmark-reverse: #FFFFFF;   /* reverso sobre escuro/azul */
+    --brand-wordmark-vibrant: #1B2FEB;   /* opcional — versão colorida (marketing) */
 
-  /* Display P3 (telas modernas) */
-  --brand-orange-p3: color(display-p3 0.9110 0.3776 0.2157);
-  --brand-blue-p3:   color(display-p3 0.1235 0.1823 0.8852);
-  --brand-cyan-p3:   color(display-p3 0.4424 0.9236 0.9880);
+    /* Display P3 (telas modernas) */
+    --brand-orange-p3: color(display-p3 0.9110 0.3776 0.2157);
+    --brand-blue-p3:   color(display-p3 0.1235 0.1823 0.8852);
+    --brand-cyan-p3:   color(display-p3 0.4424 0.9236 0.9880);
 }
 ```
