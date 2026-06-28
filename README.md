@@ -1,6 +1,6 @@
 # Actuar — Brand Kit
 
-Ativos de marca da Actuar: logo completo, wordmark e folha de impressão, em SVG, PNG e PDF vetorial.
+Ativos de marca da Actuar: logo completo, símbolo, wordmark e folha de impressão, em SVG, PNG e PDF vetorial.
 
 ---
 
@@ -93,20 +93,20 @@ genérico (= colorido). Uso: `<link rel="icon" href="favicon.ico">`.
 
 ```css
 :root {
-    /* Marca */
-    --brand-orange: #FB5423;   /* energia & ação — o humano */
-    --brand-blue:   #1B2FEB;   /* confiança & estrutura — o core */
-    --brand-cyan:   #1FEFFF;   /* movimento & recorrência — o fluxo */
-    --brand-white:  #FFFFFF;
+  /* Marca */
+  --brand-orange: #FB5423;   /* energia & ação — o humano */
+  --brand-blue:   #1B2FEB;   /* confiança & estrutura — o core */
+  --brand-cyan:   #1FEFFF;   /* movimento & recorrência — o fluxo */
+  --brand-white:  #FFFFFF;
 
-    /* Wordmark */
-    --brand-wordmark:         #0A1130;   /* primário — quase-preto azulado */
-    --brand-wordmark-reverse: #FFFFFF;   /* reverso sobre escuro/azul */
-    --brand-wordmark-vibrant: #1B2FEB;   /* opcional — versão colorida (marketing) */
+  /* Wordmark */
+  --brand-wordmark:         #0A1130;   /* primário — quase-preto azulado */
+  --brand-wordmark-reverse: #FFFFFF;   /* reverso sobre escuro/azul */
+  --brand-wordmark-vibrant: #1B2FEB;   /* opcional — versão colorida (marketing) */
 
-    /* Display P3 (telas modernas) */
-    --brand-orange-p3: color(display-p3 0.9110 0.3776 0.2157);
-    --brand-blue-p3:   color(display-p3 0.1235 0.1823 0.8852);
-    --brand-cyan-p3:   color(display-p3 0.4424 0.9236 0.9880);
+  /* Display P3 (telas modernas) */
+  --brand-orange-p3: color(display-p3 0.9110 0.3776 0.2157);
+  --brand-blue-p3:   color(display-p3 0.1235 0.1823 0.8852);
+  --brand-cyan-p3:   color(display-p3 0.4424 0.9236 0.9880);
 }
 ```
