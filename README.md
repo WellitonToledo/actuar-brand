@@ -27,7 +27,8 @@ actuar-brand-kit/
 ├── logo/        Lockup completo (símbolo + wordmark)
 ├── wordmark/    Só o nome, sem símbolo
 ├── symbol/      Só o símbolo (marca/ícone) + favicons .ico
-├── gradient/    Símbolo e wordmark em gradiente (2 e 3 cores) — peças expressivas
+├── gradient/    Símbolo, wordmark e bloco em gradiente (2 e 3 cores) — peças expressivas
+├── comemorativas/ Logos temáticos para datas especiais (Brasil, Dia dos Namorados, Halloween…)
 ├── print/       PDF multipágina pronto para a gráfica
 ├── wallpapers/  Papéis de parede — desktop e mobile (em breve)
 └── social/      Templates para redes sociais (em breve)
@@ -73,8 +74,20 @@ Símbolo e wordmark com as cores da marca em degradê. Para capas, campanhas e m
 | `actuar-simbolo-gradiente-3cor` | Laranja → azul → ciano (`#FB5423 → #1B2FEB → #1FEFFF`) — espectro completo. |
 | `actuar-wordmark-gradiente-2cor` | Laranja → ciano. |
 | `actuar-wordmark-gradiente-3cor` | Laranja → azul → ciano. |
+| `actuar-bloco-gradiente-2cor` | Bloco (símbolo + wordmark empilhados) em laranja → ciano. |
+| `actuar-bloco-gradiente-3cor` | Bloco em laranja → azul → ciano. |
 
 > A versão gradiente do wordmark contraria a regra de base (o nome recua no escuro). Reserve-a para peças expressivas; mantenha o wordmark sólido na assinatura padrão. Apenas SVG/PNG — sem PDF (gradiente não reproduz bem em CMYK).
+
+### comemorativas/ — logos temáticos
+
+Versões especiais do logo para datas comemorativas e campanhas sazonais. Uso pontual — **nunca como assinatura institucional**.
+
+| Arquivo | Tema |
+|---|---|
+| `actuar-logo-brasil` | Brasil — verde e amarelo, datas cívicas. |
+| `actuar-logo-dia-dos-namorados` | Dia dos Namorados — temática romântica. |
+| `actuar-logo-halloween` | Halloween — temática de terror/diversão. |
 
 > **Nunca** o wordmark sólido em laranja ou ciano. Laranja diria "ação/impulso"; ciano diria "movimento/recorrência" (e some no branco, 1.41:1). O símbolo é a energia; o wordmark é a base.
 
